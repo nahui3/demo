@@ -1,19 +1,17 @@
-import { useState } from 'react'
+import React from 'react'
 import './App.css'
+import { HelloNahui } from '@nahui3/web'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Добро пожаловать в React!</h1>
+        <h1>Компоненты @nahui3/web</h1>
         <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            Счетчик: {count}
-          </button>
-          <p>
-            Отредактируйте <code>src/App.jsx</code> и сохраните для перезагрузки
+          <HelloNahui name="NAHUI" />
+          <p style={{ marginTop: 16 }}>
+            Этот пример использует компонент <code>HelloNahui</code> из пакета
+            <code> @nahui3/web</code>.
           </p>
         </div>
       </header>
