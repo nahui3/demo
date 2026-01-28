@@ -1,0 +1,15 @@
+{
+  "originHash" : "342497c62168e002511413540bbfd68329b01bfd30f72c3a07dc168955b8f20a",
+  "pins" : [
+    {
+      "identity" : "ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nahui3/ios",
+      "state" : {
+        "branch" : "main",
+        "revision" : "f5b9499dbb9834be52dcdd1e00b2762b9e02fd1d"
+      }
+    }
+  ],
+  "version" : 3
+}

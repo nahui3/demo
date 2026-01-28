@@ -1,0 +1,32 @@
+name: Demo
+
+options:
+  minimumXcodeGenVersion: 2.37.0
+
+settings:
+  base:
+    IPHONEOS_DEPLOYMENT_TARGET: 17.0
+    SWIFT_VERSION: 5.9
+
+packages:
+  NAHUI:
+    url: https://github.com/nahui3/ios
+    branch: main
+
+targets:
+  Demo:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - Demo
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: ru.nahui3.Demo-NAHUI
+      DEVELOPMENT_TEAM: 5HDD9A94JL
+      GENERATE_INFOPLIST_FILE: YES
+      ENABLE_PREVIEWS: YES
+      ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+      ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+    dependencies:
+      - package: NAHUI
+        product: NAHUI
